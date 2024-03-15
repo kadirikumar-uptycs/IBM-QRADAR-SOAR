@@ -8,12 +8,7 @@
   is a good example. Checkout https://guides.github.com/features/mastering-markdown/
   for tips on writing with Markdown
 
-  All fields followed by "::CHANGE_ME::"" should be manually edited
-
   If you make manual edits and run docgen again, a .bak file will be created
-
-  Store any screenshots in the "doc/screenshots" directory and reference them like:
-  ![screenshot: screenshot_1](./screenshots/screenshot_1.png)
 
   NOTE: If your app is available in the container-format only, there is no need to mention the integration server in this readme.
 -->
@@ -302,6 +297,8 @@ playbook.addProperty('json_data', jsonData)
 
 
 ```
+</p>
+</details>
 
 ---
 
