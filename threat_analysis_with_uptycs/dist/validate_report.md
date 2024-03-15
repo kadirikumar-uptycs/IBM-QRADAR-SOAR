@@ -4,7 +4,7 @@
 
 | SDK Version       | Generation Time          | Command Line Arguments Provided |
 | :---------------- | ------------------------ | ------------------------------- |
-| 51.0.1.0.695 | 2024/03/14 18:33:34 | `verbose`: True, `cmd`: validate, `package`: threat_analysis_with_uptycs |
+| 51.0.1.0.695 | 2024/03/15 12:25:51 | `verbose`: True, `cmd`: validate, `package`: . |
 
 ## Results
 | **Severity** | **Count** |
@@ -119,7 +119,7 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 ## tox tests
 <span style="color:red">CRITICAL</span>: 3 tests failed. Details:
 
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001CF90EF0FD0>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE903A6F50>
 	
 	    def test_function_definition(self):
 	        """ Test that the package provides customization_data that defines the function """
@@ -127,12 +127,12 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	>       assert func is not None
 	E       assert None is not None
 	
-	tests\test_funct_uptycs_api.py:54: AssertionError
+	tests\test_funct_uptycs_api.py:53: AssertionError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001CF90E779D0>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001CF92182110>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE903A6B90>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001EE916B3CD0>
 	mock_inputs = {`uptycs_api_endpoint`: `/`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [
@@ -146,12 +146,12 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	>       assert(results)
 	E       assert None
 	
-	tests\test_funct_uptycs_api.py:76: AssertionError
+	tests\test_funct_uptycs_api.py:75: AssertionError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001CF92161150>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001CF92182110>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE91691990>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001EE916B3CD0>
 	mock_inputs = {`uptycs_api_endpoint`: `/assets/count`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [
@@ -165,7 +165,7 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	>       assert(results)
 	E       assert None
 	
-	tests\test_funct_uptycs_api.py:76: AssertionError
+	tests\test_funct_uptycs_api.py:75: AssertionError
 	
 	---
 	

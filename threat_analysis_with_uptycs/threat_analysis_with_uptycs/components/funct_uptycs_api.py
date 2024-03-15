@@ -7,10 +7,11 @@
 import json
 import logging
 from resilient_circuits import AppFunctionComponent, function, FunctionResult
-from resilient_circuits import FunctionError, StatusMessage
-from resilient_lib import validate_fields, ResultPayload
+from resilient_circuits import FunctionError, StatusMessage, handler
+from resilient_lib import ResultPayload
 import requests
 from threat_analysis_with_uptycs.util.uptycs_helper import get_api_headers
+# from resilient_lib import validate_fields
 
 PACKAGE_NAME = "threat_analysis_with_uptycs"
 FN_NAME = "uptycs_api"
@@ -21,6 +22,12 @@ class FunctionComponent(AppFunctionComponent):
 
     def __init__(self, opts):
         super().__init__(opts, PACKAGE_NAME)
+        self.options = opts.get(PACKAGE_NAME, {})
+
+    @handler("reload")
+    def _reload(self, event, opts):
+        """Configuration options have changed, save new values"""
+        self.options = opts.get(PACKAGE_NAME, {})
 
     @function(FN_NAME)
     def _uptycs_api_function(self, event, *args, **kwargs):
@@ -45,21 +52,22 @@ class FunctionComponent(AppFunctionComponent):
             log.info("Payload: %s", payload)
             result_payload_format = ResultPayload(PACKAGE_NAME, **kwargs)
             # validating app_configs
-            validate_fields([
-                {"name": "uptycs_domain"},
-                {"name": "uptycs_domain_suffix"},
-                {"name": "uptycs_customer_id"},
-                {"name": "uptycs_api_key"},
-                {"name": "uptycs_api_secret"},
-                ],
-                self.app_configs)
+            # validate_fields([
+            #     {"name": "uptycs_domain"},
+            #     {"name": "uptycs_domain_suffix"},
+            #     {"name": "uptycs_customer_id"},
+            #     {"name": "uptycs_api_key"},
+            #     {"name": "uptycs_api_secret"},
+            #     ],
+            #     self.app_configs)
             # calculate headers
-            headers=get_api_headers(key=self.app_configs.uptycs_api_key,
-                                    secret=self.app_configs.uptycs_api_secret)
+            key=self.options.uptycs_api_key
+            secret=self.options.uptycs_api_secret
+            headers=get_api_headers(key, secret)
             # Uptycs Parameters
-            domain = self.app_configs.uptycs_domain
-            domain_suffix = self.app_configs.uptycs_domain_suffix
-            customer_id = self.app_configs.uptycs_customer_id
+            domain = self.options.uptycs_domain
+            domain_suffix = self.options.uptycs_domain_suffix
+            customer_id = self.options.uptycs_customer_id
             url = f'https://{domain + domain_suffix}/public/api'
             url += f'/customers/{customer_id}{endpoint}'
 
