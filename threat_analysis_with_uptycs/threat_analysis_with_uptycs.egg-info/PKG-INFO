@@ -1,5 +1,5 @@
 Metadata-Version: 2.1
-Name: threat-analysis-with-uptycs
+Name: threat_analysis_with_uptycs
 Version: 1.0.0
 Summary: Responds to threats everywhere across the cloud, endpoints, containers, and K8s systems
 Home-page: https://www.uptycs.com
@@ -9,6 +9,7 @@ License: MIT
 Platform: any
 Classifier: Programming Language :: Python
 Requires-Python: >=3.11
+Requires-Dist: resilient-circuits>=51.0.1.0.0
 
 It is a robust extension that seamlessly integrates with the Uptycs platform to retrieve real-time alerts data and analyze potential security threats. 
     This integration empowers security teams to proactively monitor, analyze, and respond to security incidents within their organization's IT infrastructure, ensuring timely detection and mitigation of threats.

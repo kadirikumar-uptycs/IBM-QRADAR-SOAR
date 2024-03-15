@@ -4,7 +4,7 @@
 
 | SDK Version       | Generation Time          | Command Line Arguments Provided |
 | :---------------- | ------------------------ | ------------------------------- |
-| 51.0.1.0.695 | 2024/03/15 12:25:51 | `verbose`: True, `cmd`: validate, `package`: . |
+| 51.0.1.0.695 | 2024/03/15 18:05:00 | `verbose`: True, `cmd`: validate, `package`: . |
 
 ## Results
 | **Severity** | **Count** |
@@ -119,7 +119,7 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 ## tox tests
 <span style="color:red">CRITICAL</span>: 3 tests failed. Details:
 
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE903A6F50>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025B1C8221D0>
 	
 	    def test_function_definition(self):
 	        """ Test that the package provides customization_data that defines the function """
@@ -127,45 +127,55 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	>       assert func is not None
 	E       assert None is not None
 	
-	tests\test_funct_uptycs_api.py:53: AssertionError
+	tests\test_funct_uptycs_api.py:42: AssertionError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE903A6B90>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001EE916B3CD0>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025B1AEBB390>
+	mocked_requests = <MagicMock name=`request` id=`2590366886608`>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025B1D81EB90>
 	mock_inputs = {`uptycs_api_endpoint`: `/`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [
 	        (mock_inputs_1),
 	        (mock_inputs_2)
 	    ])
-	    def test_success(self, circuits_app, mock_inputs):
+	    @patch("requests.request")
+	    def test_success(self, mocked_requests, circuits_app, mock_inputs):
 	        """ Test calling with sample values for the parameters """
+	        # Set up the mock response
+	        mocked_requests.return_value.status_code = 200
+	        mocked_requests.return_value.json.return_value = {"data": "mock_response"}
 	    
 	        results = call_uptycs_api_function(circuits_app, mock_inputs)
-	>       assert(results)
-	E       assert None
+	>       assert results == {"data": "mock_response"}
+	E       AssertionError: assert None == {`data`: `mock_response`}
 	
-	tests\test_funct_uptycs_api.py:75: AssertionError
+	tests\test_funct_uptycs_api.py:68: AssertionError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001EE91691990>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001EE916B3CD0>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025B1DA2B250>
+	mocked_requests = <MagicMock name=`request` id=`2590363060368`>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025B1D81EB90>
 	mock_inputs = {`uptycs_api_endpoint`: `/assets/count`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [
 	        (mock_inputs_1),
 	        (mock_inputs_2)
 	    ])
-	    def test_success(self, circuits_app, mock_inputs):
+	    @patch("requests.request")
+	    def test_success(self, mocked_requests, circuits_app, mock_inputs):
 	        """ Test calling with sample values for the parameters """
+	        # Set up the mock response
+	        mocked_requests.return_value.status_code = 200
+	        mocked_requests.return_value.json.return_value = {"data": "mock_response"}
 	    
 	        results = call_uptycs_api_function(circuits_app, mock_inputs)
-	>       assert(results)
-	E       assert None
+	>       assert results == {"data": "mock_response"}
+	E       AssertionError: assert None == {`data`: `mock_response`}
 	
-	tests\test_funct_uptycs_api.py:75: AssertionError
+	tests\test_funct_uptycs_api.py:68: AssertionError
 	
 	---
 	

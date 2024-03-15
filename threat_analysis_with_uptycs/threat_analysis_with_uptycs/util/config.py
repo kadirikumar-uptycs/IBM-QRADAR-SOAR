@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# <<PUT YOUR COPYRIGHT TEXT HERE>>
 # Generated with resilient-sdk v51.0.1.0.695
 
 """Generate a default configuration-file section for threat_analysis_with_uptycs"""
