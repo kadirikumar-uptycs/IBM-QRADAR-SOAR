@@ -1,0 +1,13 @@
+include README.md
+include Dockerfile
+include apikey_permissions.txt
+recursive-include threat_analysis_with_uptycs/util *
+include threat_analysis_with_uptycs/LICENSE
+include doc/*.md
+include doc/screenshots/*
+include icons/*.png
+recursive-include payload_samples/*/ *.json
+include tox.ini
+recursive-include tests/ *
+
+global-exclude *.bak

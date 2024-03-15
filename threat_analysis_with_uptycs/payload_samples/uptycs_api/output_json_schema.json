@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema",
+    "type": "object",
+    "properties": {
+        "version": {
+            "type": "string"
+        },
+        "success": {
+            "type": "boolean"
+        },
+        "reason": {
+            "type": "string"
+        },
+        "content": {
+            "type": "object",
+            "description": "JSON response from Uptycs"
+        },
+        "raw": {},
+        "inputs": {
+            "type": "object",
+            "properties": {
+                "uptycs_api_payload": {
+                    "type": "string"
+                },
+                "uptycs_api_method": {
+                    "type": "string"
+                },
+                "uptycs_api_endpoint": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "metrics": {
+            "type": "object",
+            "properties": {
+                "version": {
+                    "type": "string"
+                },
+                "package": {
+                    "type": "string"
+                },
+                "package_version": {
+                    "type": "string"
+                },
+                "host": {
+                    "type": "string"
+                },
+                "execution_time_ms": {
+                    "type": "integer"
+                },
+                "timestamp": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

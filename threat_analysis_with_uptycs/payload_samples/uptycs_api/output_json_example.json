@@ -1,0 +1,204 @@
+{
+    "version": "1.0",
+    "success": true,
+    "reason": "Rechead Uptycs Successfully",
+    "content": {
+        "displayName": "Check if the domain is known threat and is categorized as Coinminer (donate.v2.xmrig.com)",
+        "id": "2dbb54a5-d6b4-4d5a-8833-c17e9ff5c389",
+        "customerId": "9f2ecf45-f07a-45b6-af8c-71b8d52ef542",
+        "description": "Check if the domain is known threat and is categorized as Coinminer",
+        "uptId": "b7a24e95-aeef-4260-97c5-28af7575c2b2",
+        "assetId": "56e9d41c-e2dc-4a8d-8160-74398d2d0c4c",
+        "agentId": "7080e3f9-6cb4-4d51-a6cb-fa810345e8c8",
+        "agentType": "asset",
+        "resourceType": "asset",
+        "kubeAssetId": null,
+        "ruleId": "998db71d-5b1e-4659-8541-32543bcf1356",
+        "eventId": "d8a7c9c8-dc8f-4da9-93db-0f54cf29a052",
+        "alertId": "fcd530e5-e291-4741-aa33-63e234d602e8",
+        "code": "BAD_DOMAIN_COINMINER",
+        "assignedTo": null,
+        "status": "open",
+        "noteId": null,
+        "severity": "high",
+        "alertTime": "2024-03-13T09:02:59.000Z",
+        "grouping": "Threat Intel",
+        "key": "domain",
+        "value": "donate.v2.xmrig.com",
+        "metadata": {
+            "Type": "A",
+            "Answer": "178.128.242.134",
+            "Domain": "donate.v2.xmrig.com",
+            "Remote": "127.0.0.53",
+            "domain": "donate.v2.xmrig.com",
+            "Category": "coinminer",
+            "eventTags": [
+                "UPTYCS",
+                "THREAT-INTEL",
+                "DOMAIN",
+                "COINMINER"
+            ],
+            "Description": "Domain used by browser based miners such as coin-hive",
+            "ThreatSourceDetails": {
+                "value": "donate.v2.xmrig.com",
+                "description": "Domain used by browser based miners such as coin-hive",
+                "threat_source_name": "ZeroDot1 Coin Miners Domains",
+                "threat_source_description": "A feed of coin miner domains"
+            }
+        },
+        "internalMetadata": {
+            "upt_hash": "a45f92b9-6e35-4db1-bf9d-90d5c5a1c473"
+        },
+        "exceptionMetadata": {
+            "type": "A",
+            "answer": "178.128.242.134",
+            "domain": "donate.v2.xmrig.com",
+            "remote": "127.0.0.53",
+            "assetId": "56e9d41c-e2dc-4a8d-8160-74398d2d0c4c",
+            "category": "coinminer",
+            "assetTags": [
+                "all",
+                "ubuntu",
+                "asset-group=assets",
+                "uptycs_edr_linux_yara"
+            ],
+            "eventtags": [
+                "UPTYCS",
+                "THREAT-INTEL",
+                "DOMAIN",
+                "COINMINER"
+            ],
+            "description": "Domain used by browser based miners such as coin-hive",
+            "alertGrouping": "Threat Intel",
+            "assetObjectGroupId": "79ee68af-d9f4-4c2b-a90a-10597d62c76b"
+        },
+        "resolvedAt": null,
+        "isTask": false,
+        "groupId": null,
+        "groupName": null,
+        "resolutionDays": null,
+        "lastActiveAt": null,
+        "alertStatusReasonId": null,
+        "createdAt": "2024-03-13T09:06:55.035Z",
+        "hashKey": "efb1e6e1-83f0-4e0b-b8fb-76d29f7d30fb",
+        "updatedAt": "2024-03-13T09:06:56.209Z",
+        "updatedBy": null,
+        "rowCount": 1,
+        "lastOccurredAt": "2024-03-13T09:02:59.000Z",
+        "alertTags": [
+            "UPTYCS",
+            "THREAT-INTEL",
+            "DOMAIN",
+            "COINMINER"
+        ],
+        "groupingL2": "Threat Intel",
+        "groupingL3": "Threat Intel",
+        "groupingL4": "",
+        "eventRuleId": "08a3c938-6b9d-4f67-af6a-4d6c937a649f",
+        "score": "5.0",
+        "isContainer": false,
+        "cloudType": null,
+        "cloudTenantId": null,
+        "cloudTenantName": null,
+        "cloudRegion": null,
+        "cloudRegionCode": null,
+        "noisy": false,
+        "serviceValue": null,
+        "resourceValue": null,
+        "cloudResourceId": null,
+        "note": null,
+        "assignedToUser": null,
+        "updatedByUser": null,
+        "alertStatusReason": null,
+        "alertRule": {
+            "name": "Bad domain - Coinminer"
+        },
+        "asset": {
+            "id": "56e9d41c-e2dc-4a8d-8160-74398d2d0c4c",
+            "hostName": "Uptycs-Host",
+            "interfaces": []
+        },
+        "metaDataMap": {
+            "Category": {
+                "orginalName": "question_lookup_category",
+                "pivot": null
+            },
+            "Domain": {
+                "orginalName": "question",
+                "pivot": {
+                    "id": "52ae3f65-107a-4720-90b2-9c6d8048d3e6",
+                    "name": "question",
+                    "description": "Queries to be run on question",
+                    "visualizationFormat": null,
+                    "searchDays": 1,
+                    "queryLimit": 1000,
+                    "custom": false
+                }
+            },
+            "Type": {
+                "orginalName": "type",
+                "pivot": null
+            },
+            "Remote": {
+                "orginalName": "remote",
+                "pivot": null
+            },
+            "PID": {
+                "orginalName": "pid",
+                "pivot": null
+            },
+            "Process Name": {
+                "orginalName": "name",
+                "pivot": {
+                    "id": "cbff7f48-44e3-4da1-9c79-4ad6c2c2424d",
+                    "name": "name",
+                    "description": "Queries to be run on secretsmanager_inventory and Cloudtrail Events for secretsmanager",
+                    "visualizationFormat": null,
+                    "searchDays": 1,
+                    "queryLimit": 10,
+                    "custom": false
+                }
+            },
+            "Answer": {
+                "orginalName": "answer",
+                "pivot": null
+            },
+            "Description": {
+                "orginalName": "question_lookup_description",
+                "pivot": null
+            },
+            "Parents": {
+                "orginalName": "ancestor_list",
+                "pivot": null
+            }
+        },
+        "alertTimeSuppresionStart": null,
+        "alertTimeSuppresionDuration": null,
+        "links": [
+            {
+                "rel": "self",
+                "title": "Alert",
+                "href": "/api/customers/9f2ecf45-f07a-45b6-af8c-71b8d52ef542/alertsReporting/56e9d41c-e2dc-4a8d-8160-74398d2d0c4c"
+            },
+            {
+                "rel": "parent",
+                "title": "Alerts",
+                "href": "/api/customers/9f2ecf45-f07a-45b6-af8c-71b8d52ef542/alertsReporting"
+            }
+        ]
+    },
+    "raw": "{\"displayName\": \"Check if the domain is known threat and is categorized as Coinminer (donate.v2.xmrig.com)\", \"id\": \"2dbb54a5-d6b4-4d5a-8833-c17e9ff5c389\", \"customerId\": \"9f2ecf45-f07a-45b6-af8c-71b8d52ef542\", \"description\": \"Check if the domain is known threat and is categorized as Coinminer\", \"uptId\": \"b7a24e95-aeef-4260-97c5-28af7575c2b2\", \"assetId\": \"56e9d41c-e2dc-4a8d-8160-74398d2d0c4c\", \"agentId\": \"7080e3f9-6cb4-4d51-a6cb-fa810345e8c8\", \"agentType\": \"asset\", \"resourceType\": \"asset\", \"kubeAssetId\": null, \"ruleId\": \"998db71d-5b1e-4659-8541-32543bcf1356\", \"eventId\": \"d8a7c9c8-dc8f-4da9-93db-0f54cf29a052\", \"alertId\": \"fcd530e5-e291-4741-aa33-63e234d602e8\", \"code\": \"BAD_DOMAIN_COINMINER\", \"assignedTo\": null, \"status\": \"open\", \"noteId\": null, \"severity\": \"high\", \"alertTime\": \"2024-03-13T09:02:59.000Z\", \"grouping\": \"Threat Intel\", \"key\": \"domain\", \"value\": \"donate.v2.xmrig.com\", \"metadata\": {\"Type\": \"A\", \"Answer\": \"178.128.242.134\", \"Domain\": \"donate.v2.xmrig.com\", \"Remote\": \"127.0.0.53\", \"domain\": \"donate.v2.xmrig.com\", \"Category\": \"coinminer\", \"eventTags\": [\"UPTYCS\", \"THREAT-INTEL\", \"DOMAIN\", \"COINMINER\"], \"Description\": \"Domain used by browser based miners such as coin-hive\", \"ThreatSourceDetails\": {\"value\": \"donate.v2.xmrig.com\", \"description\": \"Domain used by browser based miners such as coin-hive\", \"threat_source_name\": \"ZeroDot1 Coin Miners Domains\", \"threat_source_description\": \"A feed of coin miner domains\"}}, \"internalMetadata\": {\"upt_hash\": \"a45f92b9-6e35-4db1-bf9d-90d5c5a1c473\"}, \"exceptionMetadata\": {\"type\": \"A\", \"answer\": \"178.128.242.134\", \"domain\": \"donate.v2.xmrig.com\", \"remote\": \"127.0.0.53\", \"assetId\": \"56e9d41c-e2dc-4a8d-8160-74398d2d0c4c\", \"category\": \"coinminer\", \"assetTags\": [\"all\", \"ubuntu\", \"asset-group=assets\", \"uptycs_edr_linux_yara\"], \"eventtags\": [\"UPTYCS\", \"THREAT-INTEL\", \"DOMAIN\", \"COINMINER\"], \"description\": \"Domain used by browser based miners such as coin-hive\", \"alertGrouping\": \"Threat Intel\", \"assetObjectGroupId\": \"79ee68af-d9f4-4c2b-a90a-10597d62c76b\"}, \"resolvedAt\": null, \"isTask\": false, \"groupId\": null, \"groupName\": null, \"resolutionDays\": null, \"lastActiveAt\": null, \"alertStatusReasonId\": null, \"createdAt\": \"2024-03-13T09:06:55.035Z\", \"hashKey\": \"efb1e6e1-83f0-4e0b-b8fb-76d29f7d30fb\", \"updatedAt\": \"2024-03-13T09:06:56.209Z\", \"updatedBy\": null, \"rowCount\": 1, \"lastOccurredAt\": \"2024-03-13T09:02:59.000Z\", \"alertTags\": [\"UPTYCS\", \"THREAT-INTEL\", \"DOMAIN\", \"COINMINER\"], \"groupingL2\": \"Threat Intel\", \"groupingL3\": \"Threat Intel\", \"groupingL4\": \"\", \"eventRuleId\": \"08a3c938-6b9d-4f67-af6a-4d6c937a649f\", \"score\": \"5.0\", \"isContainer\": false, \"cloudType\": null, \"cloudTenantId\": null, \"cloudTenantName\": null, \"cloudRegion\": null, \"cloudRegionCode\": null, \"noisy\": false, \"serviceValue\": null, \"resourceValue\": null, \"cloudResourceId\": null, \"note\": null, \"assignedToUser\": null, \"updatedByUser\": null, \"alertStatusReason\": null, \"alertRule\": {\"name\": \"Bad domain - Coinminer\"}, \"asset\": {\"id\": \"56e9d41c-e2dc-4a8d-8160-74398d2d0c4c\", \"hostName\": \"Uptycs-Host\", \"interfaces\": []}, \"metaDataMap\": {\"Category\": {\"orginalName\": \"question_lookup_category\", \"pivot\": null}, \"Domain\": {\"orginalName\": \"question\", \"pivot\": {\"id\": \"52ae3f65-107a-4720-90b2-9c6d8048d3e6\", \"name\": \"question\", \"description\": \"Queries to be run on question\", \"visualizationFormat\": null, \"searchDays\": 1, \"queryLimit\": 1000, \"custom\": false}}, \"Type\": {\"orginalName\": \"type\", \"pivot\": null}, \"Remote\": {\"orginalName\": \"remote\", \"pivot\": null}, \"PID\": {\"orginalName\": \"pid\", \"pivot\": null}, \"Process Name\": {\"orginalName\": \"name\", \"pivot\": {\"id\": \"cbff7f48-44e3-4da1-9c79-4ad6c2c2424d\", \"name\": \"name\", \"description\": \"Queries to be run on secretsmanager_inventory and Cloudtrail Events for secretsmanager\", \"visualizationFormat\": null, \"searchDays\": 1, \"queryLimit\": 10, \"custom\": false}}, \"Answer\": {\"orginalName\": \"answer\", \"pivot\": null}, \"Description\": {\"orginalName\": \"question_lookup_description\", \"pivot\": null}, \"Parents\": {\"orginalName\": \"ancestor_list\", \"pivot\": null}}, \"alertTimeSuppresionStart\": null, \"alertTimeSuppresionDuration\": null, \"links\": [{\"rel\": \"self\", \"title\": \"Alert\", \"href\": \"/api/customers/9f2ecf45-f07a-45b6-af8c-71b8d52ef542/alertsReporting/56e9d41c-e2dc-4a8d-8160-74398d2d0c4c\"}, {\"rel\": \"parent\", \"title\": \"Alerts\", \"href\": \"/api/customers/9f2ecf45-f07a-45b6-af8c-71b8d52ef542/alertsReporting\"}]}",
+    "inputs": {
+        "uptycs_api_payload": "{}",
+        "uptycs_api_method": "GET",
+        "uptycs_api_endpoint": "/alertsReporting/6f21a882-bbc5-43ba-ac42-83a8c052a16d"
+    },
+    "metrics": {
+        "version": "1.0",
+        "package": "threat-analysis-with-uptycs",
+        "package_version": "1.0.0",
+        "host": "Uptycs-Host",
+        "execution_time_ms": 1343,
+        "timestamp": "2024-03-13 14:38:12"
+    }
+}

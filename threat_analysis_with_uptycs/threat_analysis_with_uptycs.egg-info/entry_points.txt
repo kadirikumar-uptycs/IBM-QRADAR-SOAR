@@ -1,0 +1,11 @@
+[resilient.circuits.components]
+FunctUptycsApiFunctionComponent = threat_analysis_with_uptycs.components.funct_uptycs_api:FunctionComponent
+
+[resilient.circuits.configsection]
+gen_config = threat_analysis_with_uptycs.util.config:config_section_data
+
+[resilient.circuits.customize]
+customize = threat_analysis_with_uptycs.util.customize:customization_data
+
+[resilient.circuits.selftest]
+selftest = threat_analysis_with_uptycs.util.selftest:selftest_function
