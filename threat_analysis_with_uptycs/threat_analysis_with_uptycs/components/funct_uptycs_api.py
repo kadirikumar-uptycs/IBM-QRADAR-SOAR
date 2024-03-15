@@ -83,7 +83,7 @@ class FunctionComponent(AppFunctionComponent):
             yield StatusMessage(f"Endpoint reached successfully and\
                                     returning results for App Function: '{FN_NAME}'")
             yield StatusMessage(f"Finished running App Function: '{FN_NAME}'")
-            log.info("Complete")
+            log.info("complete")
             yield FunctionResult(result_payload_format)
         except Exception:
             yield FunctionError()

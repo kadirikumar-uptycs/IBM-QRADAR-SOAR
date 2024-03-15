@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Tests using pytest_resilient_circuits"""
-
 import pytest
 from resilient_circuits.util import get_config_data, get_function_definition
 from resilient_circuits import SubmitTestFunction, FunctionResult
