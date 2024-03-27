@@ -8,12 +8,7 @@ PACKAGE_NAME = "threat_analysis_with_uptycs"
 FUNCTION_NAME = "uptycs_api"
 
 # Read the default configuration-data section from the package
-config_data = """[threat_analysis_with_uptycs]
-uptycs_domain = quality2
-uptycs_domain_suffix = .uptycs.io
-uptycs_customer_id = 049dad7d-94fc-4d78-9740-f55d81e0adfe
-uptycs_api_key = O6FGHURJYMHV3LK4EK5IJZUI2QC4Q7G2
-uptycs_api_secret = 471EOh2wWsZZw9w4inb0uc99zs8tSbrIGt+mBNanRGswRzEhRqQpMj5ASthcZ1zc"""
+config_data = get_config_data(PACKAGE_NAME)
 
 # Provide a simulation of the Resilient REST API (uncomment to connect to a real appliance)
 resilient_mock = "pytest_resilient_circuits.BasicResilientMock"
@@ -64,12 +59,25 @@ class TestUptycsApi:
         "uptycs_api_endpoint": "/assets/count"
     }
 
-    @pytest.mark.parametrize("mock_inputs", [
-        (mock_inputs_1),
-        (mock_inputs_2)
-    ])
-    def test_success(self, circuits_app, mock_inputs):
+    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_1)])
+    def test_domain_details(self, circuits_app, mock_inputs):
         """ Test calling with sample values for the parameters """
 
         results = call_uptycs_api_function(circuits_app, mock_inputs)
-        assert(results)
+        response = results['content']
+        keys = list(response.keys())
+        testcases = {
+            "name": "QRADAR SOAR",
+            "domain": "qradar"
+        }
+        assert(isinstance(response, dict) and all([(key in keys and testcases[key] == response[key]) for key in testcases]))
+        
+
+    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_2)])
+    def test_assets_count(self, circuits_app, mock_inputs):
+        """ Test with assets count API """
+
+        results = call_uptycs_api_function(circuits_app, mock_inputs)
+        response = results['content']
+        assert(isinstance(response, dict) and 'count' in response and isinstance(response['count'], int))
+    

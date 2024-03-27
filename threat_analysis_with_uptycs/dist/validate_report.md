@@ -4,7 +4,7 @@
 
 | SDK Version       | Generation Time          | Command Line Arguments Provided |
 | :---------------- | ------------------------ | ------------------------------- |
-| 51.0.1.0.695 | 2024/03/15 19:40:53 | `verbose`: True, `cmd`: validate, `package`: . |
+| 51.0.1.0.695 | 2024/03/27 18:02:37 | `verbose`: True, `cmd`: validate, `package`: . |
 
 ## Results
 | **Severity** | **Count** |
@@ -119,7 +119,7 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 ## tox tests
 <span style="color:red">CRITICAL</span>: 3 tests failed. Details:
 
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x00000198B5BC9610>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA84FC350>
 	
 	    def test_function_definition(self):
 	        """ Test that the package provides customization_data that defines the function """
@@ -127,45 +127,39 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	>       assert func is not None
 	E       assert None is not None
 	
-	tests\test_funct_uptycs_api.py:53: AssertionError
+	tests\test_funct_uptycs_api.py:48: AssertionError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x00000198B6D54E90>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x00000198B439B750>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA97FB9D0>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025AA97FA4D0>
 	mock_inputs = {`uptycs_api_endpoint`: `/`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
-	    @pytest.mark.parametrize("mock_inputs", [
-	        (mock_inputs_1),
-	        (mock_inputs_2)
-	    ])
-	    def test_success(self, circuits_app, mock_inputs):
+	    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_1)])
+	    def test_domain_details(self, circuits_app, mock_inputs):
 	        """ Test calling with sample values for the parameters """
 	    
 	        results = call_uptycs_api_function(circuits_app, mock_inputs)
-	>       assert(results)
-	E       assert None
+	>       response = results[`content`]
+	E       TypeError: `NoneType` object is not subscriptable
 	
-	tests\test_funct_uptycs_api.py:75: AssertionError
+	tests\test_funct_uptycs_api.py:67: TypeError
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x00000198B6ECA390>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x00000198B439B750>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA97FA9D0>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025AA97FA4D0>
 	mock_inputs = {`uptycs_api_endpoint`: `/assets/count`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
-	    @pytest.mark.parametrize("mock_inputs", [
-	        (mock_inputs_1),
-	        (mock_inputs_2)
-	    ])
-	    def test_success(self, circuits_app, mock_inputs):
-	        """ Test calling with sample values for the parameters """
+	    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_2)])
+	    def test_assets_count(self, circuits_app, mock_inputs):
+	        """ Test with assets count API """
 	    
 	        results = call_uptycs_api_function(circuits_app, mock_inputs)
-	>       assert(results)
-	E       assert None
+	>       response = results[`content`]
+	E       TypeError: `NoneType` object is not subscriptable
 	
-	tests\test_funct_uptycs_api.py:75: AssertionError
+	tests\test_funct_uptycs_api.py:81: TypeError
 	
 	---
 	

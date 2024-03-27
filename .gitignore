@@ -1,2 +1,4 @@
-/sample_test.py
-/.venv
+sample_test.py
+.venv
+test.py
+output.json
