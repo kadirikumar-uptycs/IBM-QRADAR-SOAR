@@ -79,7 +79,7 @@ These guides are available on the IBM Documentation website at [ibm.biz/cp4s-doc
 
 ### Proxy Server
 
-The app **does not** support a proxy server.
+Proxies supported if running on AppHost >= 1.6
 
 ### Python Environment
 

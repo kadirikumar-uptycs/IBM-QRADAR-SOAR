@@ -4,7 +4,7 @@
 
 | SDK Version       | Generation Time          | Command Line Arguments Provided |
 | :---------------- | ------------------------ | ------------------------------- |
-| 51.0.1.0.695 | 2024/03/27 18:02:37 | `verbose`: True, `cmd`: validate, `package`: . |
+| 51.0.1.0.695 | 2024/03/28 22:20:20 | `verbose`: True, `cmd`: validate, `package`: . |
 
 ## Results
 | **Severity** | **Count** |
@@ -119,7 +119,7 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 ## tox tests
 <span style="color:red">CRITICAL</span>: 3 tests failed. Details:
 
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA84FC350>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001FA15F60390>
 	
 	    def test_function_definition(self):
 	        """ Test that the package provides customization_data that defines the function """
@@ -131,8 +131,8 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA97FB9D0>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025AA97FA4D0>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001FA14C2B5D0>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001FA1638D410>
 	mock_inputs = {`uptycs_api_endpoint`: `/`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_1)])
@@ -147,8 +147,8 @@ It is recommended to manually validate the license. Suggested formats: MIT, Apac
 	
 	---
 	
-	self = <test_funct_uptycs_api.TestUptycsApi object at 0x0000025AA97FA9D0>
-	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x0000025AA97FA4D0>
+	self = <test_funct_uptycs_api.TestUptycsApi object at 0x000001FA1766EC50>
+	circuits_app = <pytest_resilient_circuits.resilient_circuits_fixtures.ResilientCircuits object at 0x000001FA1638D410>
 	mock_inputs = {`uptycs_api_endpoint`: `/assets/count`, `uptycs_api_method`: `GET`, `uptycs_api_payload`: `{}`}
 	
 	    @pytest.mark.parametrize("mock_inputs", [(mock_inputs_2)])

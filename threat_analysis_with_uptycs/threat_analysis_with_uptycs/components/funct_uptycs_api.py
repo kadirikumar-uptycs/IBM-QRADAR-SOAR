@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # (c) Copyright Uptycs 2023. All Rights Reserved
-# pylint: disable=unused-argument, too-many-locals
+# pylint: disable=unused-argument, too-many-locals, unspecified-encoding
 
 """AppFunction implementation"""
 
@@ -88,6 +88,7 @@ class FunctionComponent(AppFunctionComponent):
                 reason="Rechead Uptycs Successfully",
                 content=response.json()
             )
+            log.info('Function Results : %s', json.dumps(result_payload_format))
             yield StatusMessage(f"Endpoint reached successfully and\
                                     returning results for App Function: '{FN_NAME}'")
             yield StatusMessage(f"Finished running App Function: '{FN_NAME}'")
