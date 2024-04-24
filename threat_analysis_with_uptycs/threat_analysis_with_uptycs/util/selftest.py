@@ -1,26 +1,11 @@
 # -*- coding: utf-8 -*-
-# <<PUT YOUR COPYRIGHT TEXT HERE>>
-# Generated with resilient-sdk v51.0.1.0.695
 
 """
 Function implementation test.
-Usage: 
-    resilient-circuits selftest -l threat-analysis-with-uptycs
-    resilient-circuits selftest --print-env -l threat-analysis-with-uptycs
-
-Return examples:
-    return {
-        "state": "success",
-        "reason": "Successful connection to third party endpoint"
-    }
-
-    return {
-        "state": "failure",
-        "reason": "Failed to connect to third party endpoint"
-    }
 """
 
 import logging
+from threat_analysis_with_uptycs.util.uptycs_helper import call_uptycs
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
@@ -33,9 +18,10 @@ def selftest_function(opts):
     Suggested return values are be unimplemented, success, or failure.
     """
     app_configs = opts.get("threat_analysis_with_uptycs", {})
-    print(app_configs)
 
-    return {
-        "state": "success",
-        "reason": None
-    }
+    try:
+        call_uptycs(options=app_configs, method='GET', endpoint='/', payload='{}')
+    except Exception as uptycs_exception:
+        log.error("Encountered Exception when calling API, Exception: %s", uptycs_exception)
+        return {"status": "failure", "reason": uptycs_exception}
+    return {"state": "success"}

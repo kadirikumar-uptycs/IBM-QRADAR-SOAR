@@ -4517,3 +4517,300 @@ TypeError: write() argument must be str, not Response
 2024-03-28 22:35:19,080 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
 2024-03-28 22:35:20,844 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
 
+2024-04-02 15:33:29,000 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:33:29,001 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:33:29,002 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:33:29,003 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:33:29,003 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:33:29,005 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:33:29,008 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:33:30,832 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:33:32,284 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:33:35,075 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:33:35,230 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:33:35,230 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:33:36,255 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:33:36,255 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:33:36,264 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:33:36,264 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:33:36,265 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:33:36,266 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:33:36,379 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:33:36,380 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:33:36,381 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:33:38,257 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:33:38,466 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:33:39,074 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3737, version=1.2]
+2024-04-02 15:33:39,076 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:33:39,077 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:33:39,078 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:33:39,078 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:33:39,081 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:33:39,184 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:33:39,186 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:33:39,188 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:33:40,259 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 15:42:48,833 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:42:48,834 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:42:48,835 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:42:48,835 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:42:48,835 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:42:48,836 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:42:48,837 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:42:50,376 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:42:52,193 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:42:53,736 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:42:53,871 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:42:53,872 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:42:54,831 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:42:54,831 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:42:54,837 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:42:54,838 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:42:54,838 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:42:54,839 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:42:54,955 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:42:54,956 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:42:54,956 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:42:56,840 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:42:57,127 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:42:57,588 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3738, version=1.2]
+2024-04-02 15:42:57,589 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:42:57,589 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:42:57,589 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:42:57,590 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:42:57,591 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:42:57,699 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:42:57,700 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:42:57,702 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:42:58,842 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 15:46:00,086 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:46:00,087 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:46:00,088 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:46:00,088 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:46:00,088 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:46:00,089 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:46:00,090 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:46:01,752 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:46:04,444 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:46:06,883 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:46:07,032 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:46:07,032 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:46:08,782 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:46:08,782 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:46:08,790 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:46:08,791 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:46:08,791 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:46:08,792 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:46:08,904 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:46:08,905 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:46:08,906 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:46:10,787 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:46:11,880 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:46:12,349 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3739, version=1.2]
+2024-04-02 15:46:12,350 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:46:12,350 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:46:12,350 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:46:12,351 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:46:12,352 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:46:12,462 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:46:12,463 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:46:12,463 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:46:12,789 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 15:47:41,597 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:47:41,598 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:47:41,599 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:47:41,599 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:47:41,600 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:47:41,600 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:47:41,601 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:47:43,306 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:47:44,764 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:47:46,294 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:47:46,421 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:47:46,421 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:47:47,396 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:47:47,396 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:47:47,404 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:47:47,405 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:47:47,405 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:47:47,406 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:47:47,513 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:47:47,516 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:47:47,518 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:47:49,399 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:47:49,558 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:47:50,042 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3740, version=1.2]
+2024-04-02 15:47:50,044 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:47:50,045 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:47:50,046 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:47:50,046 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:47:50,048 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:47:50,155 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:47:50,158 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:47:50,160 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:47:51,401 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 15:51:00,829 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:51:00,830 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:51:00,835 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:51:00,835 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:51:00,836 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:51:00,836 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:51:00,837 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:51:04,101 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:51:06,325 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:51:09,969 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:51:10,097 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:51:10,098 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:51:11,457 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:51:11,457 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:51:11,462 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:51:11,463 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:51:11,463 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:51:11,464 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:51:11,579 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:51:11,581 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:51:11,583 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:51:13,459 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:51:15,460 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:51:15,678 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:51:16,166 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3741, version=1.2]
+2024-04-02 15:51:16,167 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:51:16,167 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:51:16,167 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:51:16,169 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:51:16,169 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:51:16,274 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:51:16,275 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:51:16,276 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:51:17,462 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 15:58:34,276 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 15:58:34,277 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 15:58:34,278 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 15:58:34,278 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 15:58:34,279 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 15:58:34,279 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 15:58:34,280 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 15:58:35,801 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 15:58:39,871 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 15:58:41,875 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 15:58:42,010 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 15:58:42,011 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 15:58:42,984 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 15:58:42,984 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:58:42,995 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 15:58:42,996 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 15:58:42,996 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 15:58:42,997 INFO [app] [resilient_circuits] App Started
+2024-04-02 15:58:43,104 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 15:58:43,106 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 15:58:43,108 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 15:58:44,987 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 15:58:45,126 INFO [client] [resilient_circuits] Connection established
+2024-04-02 15:58:45,617 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3742, version=1.2]
+2024-04-02 15:58:45,618 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 15:58:45,620 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 15:58:45,621 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 15:58:45,622 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 15:58:45,624 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 15:58:45,737 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 15:58:45,739 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:58:45,740 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 15:58:46,992 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-02 16:00:35,522 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 16:00:35,523 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 16:00:35,523 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 16:00:35,524 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 16:00:35,524 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 16:00:35,525 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 16:00:35,525 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 16:00:37,248 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 16:00:39,060 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 16:00:40,603 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 16:00:40,759 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 16:00:40,760 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 16:00:41,747 WARNING [actions_component] [MainThread] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 16:00:41,760 INFO [stomp_component] [MainThread] Connect to 169.60.89.124:65001
+2024-04-02 16:00:41,762 INFO [actions_component] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 16:00:41,762 INFO [app] [MainThread] Components loaded
+2024-04-02 16:00:41,763 INFO [app] [MainThread] App Started
+2024-04-02 16:00:41,866 INFO [actions_component] [MainThread] STOMP attempting to connect
+2024-04-02 16:00:41,867 INFO [stomp_component] [MainThread] Connect to Stomp...
+2024-04-02 16:00:41,867 INFO [client] [MainThread] Connecting to 169.60.89.124:65001 ...
+2024-04-02 16:00:43,947 INFO [client] [MainThread] Connection established
+2024-04-02 16:00:44,418 INFO [client] [MainThread] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3743, version=1.2]
+2024-04-02 16:00:44,419 INFO [stomp_component] [MainThread] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 16:00:44,420 INFO [stomp_component] [MainThread] Client HB: 0  Server HB: 15000
+2024-04-02 16:00:44,422 INFO [stomp_component] [MainThread] No Client heartbeats will be sent
+2024-04-02 16:00:44,422 INFO [stomp_component] [MainThread] Requested heartbeats from server.
+2024-04-02 16:00:44,423 INFO [actions_component] [MainThread] STOMP connected.
+2024-04-02 16:00:44,532 INFO [actions_component] [MainThread] resilient-circuits has started successfully and is now running...
+2024-04-02 16:00:44,533 INFO [actions_component] [MainThread] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 16:00:44,534 INFO [stomp_component] [MainThread] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 16:15:09,551 ERROR [actions_component] [MainThread] Worker interrupted
+2024-04-02 16:18:23,869 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-02 16:18:23,870 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-02 16:18:23,870 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-02 16:18:23,871 INFO [app] [MainThread] Resilient org: TAP
+2024-04-02 16:18:23,871 INFO [app] [MainThread] Logging Level: INFO
+2024-04-02 16:18:23,872 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-02 16:18:23,873 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-02 16:18:25,265 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-02 16:18:27,135 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-02 16:18:28,872 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-02 16:18:29,006 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-02 16:18:29,007 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-02 16:18:29,983 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-02 16:18:29,983 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 16:18:29,993 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-02 16:18:29,994 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-02 16:18:29,995 INFO [app] [resilient_circuits] Components loaded
+2024-04-02 16:18:29,995 INFO [app] [resilient_circuits] App Started
+2024-04-02 16:18:30,108 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-02 16:18:30,109 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-02 16:18:30,110 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-02 16:18:31,985 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-02 16:18:32,035 INFO [client] [resilient_circuits] Connection established
+2024-04-02 16:18:32,448 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3744, version=1.2]
+2024-04-02 16:18:32,450 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-02 16:18:32,452 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-02 16:18:32,453 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-02 16:18:32,454 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-02 16:18:32,457 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-02 16:18:32,572 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-02 16:18:32,574 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 16:18:32,576 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-02 16:18:33,987 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits
+2024-04-09 11:13:29,302 INFO [app] [MainThread] Configuration file: C:\Users\kadirikumar\.resilient\app.config
+2024-04-09 11:13:29,303 INFO [app] [MainThread] Resilient server: 169.60.89.124
+2024-04-09 11:13:29,304 INFO [app] [MainThread] Resilient api key id: c984c1fd-67c0-4578-8d70-bd9343c6a808
+2024-04-09 11:13:29,305 INFO [app] [MainThread] Resilient org: TAP
+2024-04-09 11:13:29,305 INFO [app] [MainThread] Logging Level: INFO
+2024-04-09 11:13:29,306 INFO [app] [MainThread] App Config plugin: Keyring
+2024-04-09 11:13:29,308 WARNING [co3] [MainThread] Unverified HTTPS requests (cafile=false).
+2024-04-09 11:13:31,420 INFO [co3base] [MainThread] Using org name: TAP
+2024-04-09 11:13:32,832 INFO [rest_helper] [MainThread] IBM Security QRadar SOAR version: v50.0.9097
+2024-04-09 11:13:34,563 INFO [app] [MainThread] Components auto-load directory: (none)
+2024-04-09 11:13:34,785 INFO [component_loader] [MainThread] Loading 1 components
+2024-04-09 11:13:34,786 INFO [component_loader] [MainThread] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' loading
+2024-04-09 11:13:35,817 WARNING [actions_component] [resilient_circuits] Unverified STOMP TLS certificate (cafile=false)
+2024-04-09 11:13:35,817 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-09 11:13:35,827 INFO [stomp_component] [resilient_circuits] Connect to 169.60.89.124:65001
+2024-04-09 11:13:35,827 INFO [actions_component] [resilient_circuits] 'threat_analysis_with_uptycs.components.funct_uptycs_api.FunctionComponent' function 'uptycs_api' registered to 'fn_uptycs_api'
+2024-04-09 11:13:35,829 INFO [app] [resilient_circuits] Components loaded
+2024-04-09 11:13:35,830 INFO [app] [resilient_circuits] App Started
+2024-04-09 11:13:35,939 INFO [actions_component] [resilient_circuits] STOMP attempting to connect
+2024-04-09 11:13:35,940 INFO [stomp_component] [resilient_circuits] Connect to Stomp...
+2024-04-09 11:13:35,941 INFO [client] [resilient_circuits] Connecting to 169.60.89.124:65001 ...
+2024-04-09 11:13:37,819 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-09 11:13:39,622 INFO [client] [resilient_circuits] Connection established
+2024-04-09 11:13:39,820 INFO [selftest] [MainThread] - Waiting for subscription to message destination. Sleeping for 2 seconds
+2024-04-09 11:13:40,199 INFO [client] [resilient_circuits] Connected to stomp broker [session=ID:v50ss.tap.ibm.com-36793-1698247300747-4:3951, version=1.2]
+2024-04-09 11:13:40,199 INFO [stomp_component] [resilient_circuits] Connected to failover:(ssl://169.60.89.124:65001)?maxReconnectAttempts=3,startupMaxReconnectAttempts=3
+2024-04-09 11:13:40,200 INFO [stomp_component] [resilient_circuits] Client HB: 0  Server HB: 15000
+2024-04-09 11:13:40,201 INFO [stomp_component] [resilient_circuits] No Client heartbeats will be sent
+2024-04-09 11:13:40,201 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
+2024-04-09 11:13:40,203 INFO [actions_component] [resilient_circuits] STOMP connected.
+2024-04-09 11:13:40,309 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
+2024-04-09 11:13:40,310 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-09 11:13:40,310 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
+2024-04-09 11:13:41,821 INFO [actions_component] [resilient_circuits] SelftestTerminateEvent, exiting resilient-circuits

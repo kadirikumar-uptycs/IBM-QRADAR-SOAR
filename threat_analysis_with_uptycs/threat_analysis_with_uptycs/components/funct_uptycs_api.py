@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# (c) Copyright Uptycs 2023. All Rights Reserved
+# (c) Copyright IBM Corp. 2024. All Rights Reserved.
 # pylint: disable=unused-argument, too-many-locals, unspecified-encoding
 
 """AppFunction implementation"""
@@ -9,8 +9,7 @@ import logging
 from resilient_circuits import AppFunctionComponent, function, FunctionResult
 from resilient_circuits import FunctionError, StatusMessage, handler
 from resilient_lib import ResultPayload
-import requests
-from threat_analysis_with_uptycs.util.uptycs_helper import get_api_headers
+from threat_analysis_with_uptycs.util.uptycs_helper import call_uptycs
 # from resilient_lib import validate_fields
 
 PACKAGE_NAME = "threat_analysis_with_uptycs"
@@ -50,45 +49,26 @@ class FunctionComponent(AppFunctionComponent):
             log.info("Endpoint: %s", endpoint)
             log.info("Method: %s", method)
             log.info("Payload: %s", payload)
+
             result_payload_format = ResultPayload(PACKAGE_NAME, **kwargs)
-            # validating app_configs
-            # validate_fields([
-            #     {"name": "uptycs_domain"},
-            #     {"name": "uptycs_domain_suffix"},
-            #     {"name": "uptycs_customer_id"},
-            #     {"name": "uptycs_api_key"},
-            #     {"name": "uptycs_api_secret"},
-            #     ],
-            #     self.app_configs)
-            # calculate headers
-            key=self.options.uptycs_api_key
-            secret=self.options.uptycs_api_secret
-            headers=get_api_headers(key, secret)
-            # Uptycs Parameters
-            domain = self.options.uptycs_domain
-            domain_suffix = self.options.uptycs_domain_suffix
-            customer_id = self.options.uptycs_customer_id
-            url = f'https://{domain + domain_suffix}/public/api'
-            url += f'/customers/{customer_id}{endpoint}'
 
             yield StatusMessage("Sending HTTP Request to Uptycs")
             # Api Call
             try:
-                response = requests.request(method=method, url=url,
-                                            headers=headers, data=payload, timeout=180)
+                response = call_uptycs(options=self.options, method=method,
+                                       endpoint=endpoint, payload=payload)
             except Exception as error:
                 log.debug("Error while calling API : %s", error)
                 raise FunctionError(f"Encountered an unexpected exception. \
                                     Exception Message: {error}") from error
             yield StatusMessage("Request sent to Uptycs successfully")
-            yield StatusMessage(" Data recieved from Uptycs")
+            yield StatusMessage(" Response recieved from Uptycs")
             # Results
             result_payload_format = result_payload_format.done(
                 success=True,
                 reason="Rechead Uptycs Successfully",
                 content=response.json()
             )
-            log.info('Function Results : %s', json.dumps(result_payload_format))
             yield StatusMessage(f"Endpoint reached successfully and\
                                     returning results for App Function: '{FN_NAME}'")
             yield StatusMessage(f"Finished running App Function: '{FN_NAME}'")

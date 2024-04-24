@@ -1,9 +1,38 @@
-""" Calculate the JWT token given secret and key """
+""" Calls Uptycs API and returns result """
 
+import logging
 import time
 import hashlib
 import base64
 import json
+import requests
+
+log = logging.getLogger(__name__)
+
+def call_uptycs(options, method, endpoint, payload):
+    """ Calls Uptycs public API """
+    log.info("Endpoint: %s", endpoint)
+    log.info("Method: %s", method)
+    log.info("Payload: %s", payload)
+    key=options.uptycs_api_key
+    secret=options.uptycs_api_secret
+    headers=get_api_headers(key, secret)
+    # Uptycs Parameters
+    domain = options.uptycs_domain
+    domain_suffix = options.uptycs_domain_suffix
+    customer_id = options.uptycs_customer_id
+    url = f'https://{domain + domain_suffix}/public/api'
+    url += f'/customers/{customer_id}{endpoint}'
+
+    try:
+        response = requests.request(method=method, url=url,
+                                            headers=headers, data=payload, timeout=180)
+        return response
+    except Exception:
+        log.debug('Error while calling uptycs API')
+        return Exception
+
+
 
 def get_api_headers(key, secret):
     """Function to calculate header parameters"""

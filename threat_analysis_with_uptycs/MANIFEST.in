@@ -6,8 +6,9 @@ include threat_analysis_with_uptycs/LICENSE
 include doc/*.md
 include doc/screenshots/*
 include icons/*.png
-recursive-include payload_samples/*/ *.json
+recursive-include payload_samples/* *.json
 include tox.ini
-recursive-include tests/ *
-
+include setup.py
+recursive-include tests *
+include data/*.md
 global-exclude *.bak

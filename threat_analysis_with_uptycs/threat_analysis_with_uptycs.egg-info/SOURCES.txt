@@ -4,6 +4,9 @@ README.md
 apikey_permissions.txt
 setup.py
 tox.ini
+data/pb_threat_analysis_with_uptycs_alerts_pb.md
+data/pb_threat_analysis_with_uptycs_detections_pb.md
+doc/README.md
 doc/screenshots/custom_layouts.png
 doc/screenshots/dt-uptycs-alerts-of-detections.png
 doc/screenshots/dt-uptycs-alerts.png
@@ -12,7 +15,10 @@ doc/screenshots/fn-uptycs-api.png
 doc/screenshots/main.png
 icons/app_logo.png
 icons/company_logo.png
+payload_samples/uptycs_api/output_json_example.json
+payload_samples/uptycs_api/output_json_schema.json
 tests/test_funct_uptycs_api.py
+tests/__pycache__/test_funct_uptycs_api.cpython-311-pytest-7.4.4.pyc
 threat_analysis_with_uptycs/LICENSE
 threat_analysis_with_uptycs/__init__.py
 threat_analysis_with_uptycs.egg-info/PKG-INFO

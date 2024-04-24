@@ -3,7 +3,7 @@
 ARG BASE_IMAGE_REPO=quay.io
 # BASE_IMAGE_TAG options: latest, python-39, python-311. See https://quay.io/repository/ibmresilient/soarapps-base-docker-image?tab=tags for all options
 # use --build-arg BASE_IMAGE_TAG=<tag> to set base image to be built from
-ARG BASE_IMAGE_TAG=latest
+ARG BASE_IMAGE_TAG=python-311
 
 FROM ${BASE_IMAGE_REPO}/ibmresilient/soarapps-base-docker-image:${BASE_IMAGE_TAG}
 

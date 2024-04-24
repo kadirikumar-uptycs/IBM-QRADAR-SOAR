@@ -11,12 +11,11 @@ def config_section_data():
     """
     config_data = None
 
-    config_data = """
-    [threat_analysis_with_uptycs]
-    uptycs_domain = <domain_name_of_uptycs_stack>
-    uptycs_domain_suffix = <domain_suffix_of_uptycs_stack>
-    uptycs_customer_id = <uptycs_customer_id>
-    uptycs_api_key = <key_value_of_uptycs_api_keys>
-    uptycs_api_secret = <secret_value_of_uptycs_api_keys>
-    """
+    config_data = """[threat_analysis_with_uptycs]
+uptycs_domain = <domain_name_of_uptycs_stack>
+uptycs_domain_suffix = <domain_suffix_of_uptycs_stack>
+uptycs_customer_id = <uptycs_customer_id>
+uptycs_api_key = <key_value_of_uptycs_api_keys>
+uptycs_api_secret = <secret_value_of_uptycs_api_keys>
+"""
     return config_data
