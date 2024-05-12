@@ -1,6 +1,5 @@
 Dockerfile
 MANIFEST.in
-README.md
 apikey_permissions.txt
 setup.py
 tox.ini
