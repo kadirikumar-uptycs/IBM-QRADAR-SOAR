@@ -2,9 +2,10 @@
 
 ## Release Notes
 
-| Version | Date    | Notes           |
-| ------- | ------- | --------------- |
-| 1.0.0   | 03/2024 | Initial Release |
+| Version | Date    | Notes                       |
+| ------- | ------- | --------------------------- |
+| 1.0.0   | 03/2024 | Initial Release             |
+| 1.1.0   | 05/2024 | Supports All Resource Types |
 
 ---
 

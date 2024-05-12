@@ -24,14 +24,24 @@ def snake_to_camel(word):
 setup(
     name="threat_analysis_with_uptycs",
     display_name="Threat Analysis with Uptycs",
-    version="1.0.0",
+    version="1.1.0",
     license="MIT",
     author="Uptycs",
     author_email="kadirikumar@uptycs.com",
     url="https://www.uptycs.com",
     description="Responds to threats everywhere across the cloud, endpoints, containers, and K8s systems",
-    long_description="""It is a robust extension that seamlessly integrates with the Uptycs platform to retrieve real-time alerts data and analyze potential security threats. 
-    This integration empowers security teams to proactively monitor, analyze, and respond to security incidents within their organization's IT infrastructure, ensuring timely detection and mitigation of threats.""",
+    long_description="""Uptycs harnesses rich data insights to achieve deeper contextual understanding, while our unified approach integrates structured telemetry, cloud-based analytics, and adherence to standards for seamless interoperability.
+
+The QRadar SOAR extension by Uptycs offers a seamless integration with the Uptycs platform, enabling real-time retrieval and analysis of alerts data to bolster security efforts. This integration equips security teams with the capability to monitor, analyze, and respond to potential threats within their organization's IT infrastructure swiftly and effectively. Uptycs' comprehensive detection and response capabilities span across various environments, including cloud, endpoints, containers, and Kubernetes systems, ensuring robust protection against evolving security challenges and minimizing risks across the entire attack surface.
+
+Key Capabilities of Uptycs Comprehensive Threat Detection and Response:
+* Swiftly detects malicious activity on Linux workloads in the Cloud.
+* Identifies potential malicious activity within the Cloud environment by ingesting and monitoring diverse cloud logs and searching for patterns of user/API activity to generate detections.
+* Offers a detailed analysis including event timelines, user/API actions, and metadata to facilitate thorough investigation and response.
+Provides container and Kubernetes-specific detections by correlating multiple events to identify potential threats.
+* Protects macOS, Windows, and Linux endpoints by meticulously analyzing signal scores, YARA detections, and alert severity.
+
+For more information, visit [https://www.uptycs.com/](https://www.uptycs.com/)""",
     install_requires=[
         "resilient-circuits>=51.0.1.0.0"
     ],
