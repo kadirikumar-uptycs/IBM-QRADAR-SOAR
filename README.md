@@ -47,6 +47,14 @@ pip3 install -e .
 resilient-circuits list
 ```
 
+###### output of command:
+
+```
+The following packages and components are installed:
+threat-analysis-with-uptycs==1.1.0:
+        FunctUptycsApiFunctionComponent
+```
+
 ##### We can run resilient circuits and test the connection with the CP4S instance. Once the resilient-circuits is run, it will listen to the destination configured for the app and any request in the destination is passed to the app for processing and the results are passed back to the destination. To run resilient-circuits, enter the following command:
 
 ```
