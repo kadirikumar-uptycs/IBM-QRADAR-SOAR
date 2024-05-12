@@ -61,7 +61,7 @@ resilient-circuits run
 2024-04-02 15:33:39,078 INFO [stomp_component] [resilient_circuits] Requested heartbeats from server.
 2024-04-02 15:33:39,081 INFO [actions_component] [resilient_circuits] STOMP connected.
 2024-04-02 15:33:39,184 INFO [actions_component] [resilient_circuits] resilient-circuits has started successfully and is now running...
-  2024-04-02 15:33:39,186 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
+2024-04-02 15:33:39,186 INFO [actions_component] [resilient_circuits] Subscribe to message destination 'fn_uptycs_api'
 2024-04-02 15:33:39,188 INFO [stomp_component] [resilient_circuits] Subscribe to message destination actions.201.fn_uptycs_api
 ```
 
@@ -71,7 +71,7 @@ resilient-circuits run
 resilient-sdk --reload -p <package-name> -f <list of functions>
 ```
 
-### Package
+### Packaging
 
 Package the app (Create the a app package which can be installed on SOAR instances), by running the following command (be in the app home directory before running the command):
 
