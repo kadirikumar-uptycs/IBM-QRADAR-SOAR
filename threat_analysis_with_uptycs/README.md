@@ -13,7 +13,7 @@
 
 **Responds to threats everywhere across the cloud, endpoints, containers, and K8s systems**
 
- ![Uptycs App: main](./screenshots/main.png)
+ ![Uptycs App: main](./doc/screenshots/main.png)
 
 It is a robust extension that seamlessly integrates with the Uptycs platform to retrieve real-time alerts data and analyze potential security threats.
 
@@ -115,7 +115,7 @@ The following table provides the settings you need to configure the app. These s
 
 provides functionality to call Uptycs public API
 
-![screenshot: fn-uptycs-api ](./screenshots/fn-uptycs-api.png)
+![screenshot: fn-uptycs-api ](./doc/screenshots/fn-uptycs-api.png)
 
 <details><summary>Inputs:</summary>
 <p>
@@ -369,11 +369,11 @@ incident.addNote(helper.createRichText(htmlData))
 
 * Import the Data Tables and Custom Fields like the screenshot below:
 
-  ![screenshot: custom_layouts](./screenshots/custom_layouts.png)
+  ![screenshot: custom_layouts](./doc/screenshots/custom_layouts.png)
 
 ## Data Table - Uptycs Alerts
 
- ![screenshot: dt-uptycs-alerts](./screenshots/dt-uptycs-alerts.png)
+ ![screenshot: dt-uptycs-alerts](./doc/screenshots/dt-uptycs-alerts.png)
 
 #### API Name:
 
@@ -399,7 +399,7 @@ uptycs_alerts_db
 
 ## Data Table - Uptycs Alerts of Detections
 
- ![screenshot: dt-uptycs-alerts-of-detections](./screenshots/dt-uptycs-alerts-of-detections.png)
+ ![screenshot: dt-uptycs-alerts-of-detections](./doc/screenshots/dt-uptycs-alerts-of-detections.png)
 
 #### API Name:
 
@@ -423,7 +423,7 @@ uptycs_alerts_of_detections_db
 
 ## Data Table - Uptycs Detections
 
- ![screenshot: dt-uptycs-detections](./screenshots/dt-uptycs-detections.png)
+ ![screenshot: dt-uptycs-detections](./doc/screenshots/dt-uptycs-detections.png)
 
 #### API Name:
 
