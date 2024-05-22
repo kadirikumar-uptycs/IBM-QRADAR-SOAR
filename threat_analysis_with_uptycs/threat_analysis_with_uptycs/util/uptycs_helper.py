@@ -30,7 +30,7 @@ def call_uptycs(options, method, endpoint, payload):
         return response
     except Exception:
         log.debug('Error while calling uptycs API')
-        return Exception
+        return {'Error': Exception}
 
 
 
