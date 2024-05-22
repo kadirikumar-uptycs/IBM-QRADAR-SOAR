@@ -1,5 +1,9 @@
 # Threat Analysis with Uptycs
 
+## Published Extension Link
+
+[https://exchange.xforce.ibmcloud.com/hub/extension/26cc0fd5862c82e60a973411525af3c3](https://exchange.xforce.ibmcloud.com/hub/extension/26cc0fd5862c82e60a973411525af3c3 "Threat Analysis with Uptycs")
+
 ## Necessary Packages
 
 - resilient
